@@ -1,146 +1,51 @@
-/* Default */
-
 body {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: #25a3ff;
+   margin: 3%;
+   background-color: black;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-   width: 0px;
-   height: 0px;
+* {
+   font-size: 18px;
+   color: white;
 }
 
-
-/* Placeholder */
-
-::-webkit-input-placeholder {
-   /* для webkit-браузеров */
-   font-size: 20px;
-   font-weight: bold;
-   color: #000;
+.comandline {
+   color: #634dc6;
+   cursor: default;
 }
 
-::-moz-placeholder {
-   /* для браузеров Firefox 19+ */
-   font-size: 20px;
-   font-weight: bold;
-   color: #000;
+.comandline__status {
+   color: #a7a84b;
+   font-weight: 700;
 }
 
-:-moz-placeholder {
-   /* для браузеров Firefox 18- */
-   font-size: 20px;
-   font-weight: bold;
-   color: #000;
-}
-
-:-ms-input-placeholder {
-   /* для браузеров IE */
-   font-size: 20px;
-   font-weight: bold;
-   color: #000;
-}
-
-
-/* Form */
-
-.form {
-   width: 410px;
-   height: 50px;
-   padding: 2px 15px 20px 15px;
-   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-   background-color: #fff;
-   margin-top: 50px;
-}
-
-.form input {
-   position: relative;
-   height: 23px;
-   width: 340px;
-   font-size: 20px;
-   font-weight: bold;
-   margin-top: 23px;
+.comandline__input {
+   background-color: black;
+   min-width: calc(100vw - 6% - 185px);
+   color: white;
    outline: none;
    border: none;
+   cursor: default;
 }
 
-.form input:required:invalid ~ .underline {
-   border-color: red;
+.comandline__sing {
+   color: white;
 }
 
-.form input:required:valid ~ .underline {
-   border-color: green;
+.message {
+   max-width: 95%;
+   white-space: pre-line;
+   text-align: justify;
+   padding-left: 30px;
+   line-height: 30px;
 }
 
-.underline {
-   width: 344px;
-   height: 1px;
-   border-bottom: 2px solid #25a3ff;
-}
-
-.send {
-   position: relative;
-   right: 5px;
-   bottom: 37px;
-   font-size: 40px;
-   color: #25a3ff;
-   float: right;
-   cursor: pointer;
-   background-color: #fff;
-   outline: none;
-   border: none;
-}
-
-.send:active:hover {
-   color: #333
-}
-
-.send:disabled {
-   color: red
-}
-
-
-/* Results */
-
-.results {
-   width: 440px;
-   height: calc(100vh - 170px);
-   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-   background-color: #fff;
-   overflow-y: hidden;
-}
-
-.result-element {
-   box-sizing: border-box;
-   width: 100%;
-   height: 63px;
-   margin: 5px 0;
-   padding: 20px 10px 20px 10px;
-   text-align: center;
-}
-
-.result-element:nth-child(2n) {
-   background-color: rgb(245, 245, 245);
-}
-
-.result-element:hover {
-   background-color: rgb(175, 175, 175)
-}
-
-.result-element a {
-   text-decoration: none;
-   font-size: 20px;
-   color: #000;
-}
-
-.result-element a:visited {
-   color: #000;
-}
-
-@media (max-width: 600px) {
-   .form, .results {
-      transform: scale(0.6);
+@media (max-width: 720px) {
+   * {
+      font-size: 14px;
+   }
+   .message {
+      max-width: 84%;
    }
 }
