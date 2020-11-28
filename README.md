@@ -13,3 +13,5 @@ You can try it on **[this](https://toper1524.github.io/twitch_hunter/client/)** 
 The program was created so that you can enjoy communication with your friends even more. We strongly recommend that you do not use this program for bullying, and also completely eliminate bullying from your life!
 
 The program is under development, and you can suggest changes.
+
+![](https://toper1524.github.io/twitch_hunter/readme.jpg)
