@@ -1,6 +1,6 @@
 # TWITCH HUNTER
 
-#####The program shows the location of the twitch user among all their subscriptions.
+**The program shows the location of the twitch user among all their subscriptions.**
 
 The console contains the following commands:
 + **find** &lt;username&gt; - directly search;
